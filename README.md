@@ -7,12 +7,12 @@ We are installing ansible on the top of AWS cloud EC2 ,our setup is this we take
 
 ❄️On three(master and target) instance Following set-up do as it is:
 
-1. create new user : i created "psadmin" general user for master node
+1. create new user : i created "psadmin" general user for master node & set password :
 
           #useradd psadmin
           #passwd psadmin
    
-3. Give Sudo power to general user "psadmin" 
+3. Give Sudo power to general user "psadmin" :
     
            #vi /etc/sudoers
 
