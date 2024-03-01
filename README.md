@@ -148,13 +148,16 @@ craete ansible inventory:
 
 
 
-on psadmin general user :
-check all hosts are connected or not:
+On "psadmin" general user (Master Node):
+
+Check all hosts are connected or not:
 
 
-   $ ansible all -m ping
-   $ vi web.yml
-   $ ansible-playbook web.yml
+      $ ansible all -m ping
+      $ vi web.yml
+      $ ansible-playbook web.yml
+
+      
    
 play-book:
  
