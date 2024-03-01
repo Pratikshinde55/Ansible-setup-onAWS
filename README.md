@@ -161,4 +161,9 @@ Create & Run Ansible-Playbook:
 
 
 check on target node httpd install or not:--
-             # rpm -q httpd
+
+
+    # rpm -q httpd
+    
+![21](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/35e67fef-7fd1-480f-90b9-a1079f81c696)
+
