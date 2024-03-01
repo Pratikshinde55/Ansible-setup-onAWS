@@ -137,9 +137,12 @@ now  ansible config file set-up
 craete ansible inventory:
 
     #vi /etc/ansible/hosts
+
     
  [pratik]
+
 3.110.29.198  ansible_user=pratik  ansible_password=ps
+
 13.201.16.171  ansible_user=pratik  ansible_password=ps
 
 
