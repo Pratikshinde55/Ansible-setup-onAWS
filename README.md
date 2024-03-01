@@ -6,16 +6,17 @@ About set-up;
 We are installing ansible on the top of AWS cloud EC2 ,our setup is this we take Three EC2 amazon linux instance , one make master node(Ansible-master) and other two make target node (Ansible-node-1,Ansible-node-2).
 
 ❄️On three(master and target) instance Following set-up do as it is:
-    1. create new user : i created "psadmin" general user for master node
-    2. Give Sudo power to general user "psadmin" 
+
+1. create new user : i created "psadmin" general user for master node
+2. Give Sudo power to general user "psadmin" 
     
            #vi /etc/sudoers
 
-    3.Allow Authentication in sshd config file :
+3.Allow Authentication in sshd config file :
     
            #vi /etc/ssh/sshd_config
 
-    4.restart sshd service 
+4.restart sshd service 
 
     
           #systemctl restart sshd
