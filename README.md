@@ -148,26 +148,16 @@ Check all hosts are connected or not:
 ![19](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/d7357644-e6d0-40c5-90fb-40e2dd826647)
 
 
+Create & Run Ansible-Playbook:
 
-     
+
       $ vi web.yml
       $ ansible-playbook web.yml
 
+![20](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/0df1a5b2-9049-4242-986d-e22dc662297f)
+
+
       
-   
-play-book:
- 
-- hosts: pratik
-  tasks:
-    - name: "installing httpd "
-      package:
-        name: "httpd"
-        state: present
-
-
-list of pratik group :
-         #ansible pratik  --list-hosts
-
 
 
 check on target node httpd install or not:--
