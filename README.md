@@ -25,10 +25,10 @@ We are installing ansible on the top of AWS cloud EC2 ,our setup is this we take
     
           #systemctl restart sshd
 
-NOTE: for Target-nide 1 & 2 i use general user is "pratik" after craeted user above four steps do as it is in each target nodes.
+NOTE: for Target-node 1 & 2 i use general user is "pratik" after craeted user above four steps do as it is in each target nodes.
 
 
-On MASTER-node :---
+💥On Master-Node 💥:---
 
 Go inside general user (psadmin) and create key for ssh Authentication:
  
