@@ -45,6 +45,8 @@ Go inside general user (psadmin) and create key for ssh Authentication:
   Note: create ssh key at general user on which we want run ansible command.
 
 ssh-key created in .ssh/ folder
+
+
        $ cd .ssh/
        $ ls -l
 
