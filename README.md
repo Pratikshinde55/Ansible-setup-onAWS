@@ -74,7 +74,7 @@ NOTE: Do same Key-copy method to all target nodes .
 
 
 
-On master node :
+❄️On master node :(Now installing Ansible on master node)
 1. install ansible-core  , but in this ansible do not provide config file,
  generally ansible-config file loaction = /etc/ansible/ansible.cfg
 
