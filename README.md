@@ -1,6 +1,6 @@
 # Ansible-setup-onAWS
 
-🌟Ansible-setup on AWS cloud using ssh-key Authentication🌟
+🌟Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication🌟
 
 About set-up:
 
