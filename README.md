@@ -143,11 +143,13 @@ On "psadmin" general user (Master Node):
 
 Check all hosts are connected or not:
 
+       $ ansible all -m ping
+
 ![19](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/d7357644-e6d0-40c5-90fb-40e2dd826647)
 
 
 
-      $ ansible all -m ping
+     
       $ vi web.yml
       $ ansible-playbook web.yml
 
