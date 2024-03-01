@@ -74,13 +74,15 @@ NOTE: Do same Key-copy method to all target nodes .
 
 
 
-❄️On master node :(Now installing Ansible on master node)
+❄️On master node :(Now install Ansible on master node) ❄️
+
 1. install ansible-core  , but in this ansible do not provide config file,
  generally ansible-config file loaction = /etc/ansible/ansible.cfg
 
         $sudo yum install ansible-core -y
         $ ansible --version
 
+![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
 we can craete ansible config file manually.
 NOTE: from General user we can't craete config file so we need to go root
