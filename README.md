@@ -91,13 +91,14 @@ NOTE: from General user we can't craete config file so we need to go root
         #exit <<-- this helps to exit from General user
 
 On master Root user:
- Go inside /etc/ansible folder and create config file(ansible.cfg) use follw coomand:
+ Go inside /etc/ansible folder and create config file(ansible.cfg) use follw commands:
 
       #cd /etc/ansible
 
       # touch anible.cfg
 
 After we created ansible config file it is empty , so we pull file and copy in it for this use following command:
+![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
       # ansible-config init
      
