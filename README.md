@@ -84,7 +84,7 @@ NOTE: Do same Key-copy method to all target nodes .
 
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
-we can craete ansible config file manually.
+we can create ansible config file manually.
 NOTE: from General user we can't craete config file so we need to go root
         #exit <<-- this helps to exit from General user
 
