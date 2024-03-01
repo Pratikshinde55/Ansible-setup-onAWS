@@ -68,7 +68,7 @@ After Key created then need to copy my "psadmin" key to host nodes , use follw c
    
      #ssh pratik@172.31.44.192
 
-Do same copy method to all target nodes .
+NOTE: Do same Key-copy method to all target nodes .
 
 .....here our instances is successfully connected by "SHH"
 
