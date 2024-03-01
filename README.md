@@ -5,7 +5,7 @@
 About set-up;
 We are installing ansible on the top of AWS cloud EC2 ,our setup is this we take Three EC2 amazon linux instance , one make master node(Ansible-master) and other two make target node (Ansible-node-1,Ansible-node-2).
 
-❄️On three(master and target) instance Following set-up do as it is:
+❄️On three(master and target) instances Following set-up do as it is:
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
