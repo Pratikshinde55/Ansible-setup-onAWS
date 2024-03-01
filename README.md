@@ -59,8 +59,13 @@ After Key created then need to copy my "psadmin" key to host nodes , use follw c
  #ssh-copy-id  pratik@<private ip of target ec2 instance>   <<--Format of cmd
     
      $ ssh-copy-id pratik@172.31.44.192
+     
+
+![13](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/4147ebd7-fdc5-4f0f-bee2-e57754dafafb)
+     
 
    After key add we also check bye using
+   
      #ssh pratik@172.31.44.192
 
 Do same copy method to all target nodes .
