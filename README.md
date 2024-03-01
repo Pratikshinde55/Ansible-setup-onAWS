@@ -98,6 +98,7 @@ On master Root user:
       # touch anible.cfg
 
 After we created ansible config file it is empty , so we pull file and copy in it for this use following command:
+
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
       # ansible-config init
@@ -105,21 +106,26 @@ After we created ansible config file it is empty , so we pull file and copy in i
       #ansible-config init --disabled > /etc/ansible/ansible.cfg
 
 
-In ansible config file we do following changes:
+⚡In ansible config file we do following changes:
  
 open ansible.cfg
         
            #vi /etc/ansible/ansible.cfg
 
-   In this file we Add privilege escalation this give become method 
-        
-           //scrensht//
+  A. In this file we Add privilege escalation this give become method:
 
-   in this file we also uncomment ansible inventory (remove semi colon)
-              //scrensht//
+![16](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/90c2ee3b-3e5b-409a-b233-e4093b7af8f0)
 
-   making host_key_checking is False
-           //scrensht//
+
+ B. In this file we also uncomment ansible Inventory (remove semi colon):
+
+![17](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/6c6377c9-f853-4cbe-91d8-986037f3cb05)
+
+
+ C. Making host_key_checking is False:
+
+ ![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
+          
 
 
 
