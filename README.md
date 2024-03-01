@@ -70,7 +70,7 @@ After Key created then need to copy my "psadmin" key to host nodes , use follw c
 
 NOTE: Do same Key-copy method to all target nodes .
 
-.....Here our instances is successfully connected by "ssh"
+........Here our instances is successfully connected by "ssh"........
 
 
 
