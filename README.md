@@ -26,6 +26,9 @@ We are installing ansible on the top of AWS cloud EC2 ,our setup is this we take
     
            #vi /etc/ssh/sshd_config
 
+![11](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b26c3367-0e18-42aa-9031-4adb254a8142)
+
+
 4.restart sshd service 
 
     
