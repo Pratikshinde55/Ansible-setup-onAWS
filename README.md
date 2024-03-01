@@ -56,7 +56,7 @@ ssh-key created in .ssh/ folder
 
 After Key created then need to copy my "psadmin" key to host nodes , use follw command to copy key to Target node:
 
-    #ssh-copy-id  pratik@<private ip of target ec2 instance>   <<--Format of cmd
+ #ssh-copy-id  pratik@<private ip of target ec2 instance>   <<--Format of cmd
     
      $ ssh-copy-id pratik@172.31.44.192
 
