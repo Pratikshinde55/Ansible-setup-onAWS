@@ -38,7 +38,7 @@ I have installed ansible on the top of AWS cloud EC2 ,Setup is i take Three EC2 
 NOTE: for Target-node 1 & 2 i use general user is "pratik" after craeted user above four steps do as it is in each target nodes.
 
 
-#💥On Master-Node 💥:---
+# 💥On Master-Node 💥:---
 
 Go inside general user (psadmin) and create key for ssh Authentication:
  
