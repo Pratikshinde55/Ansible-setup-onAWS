@@ -40,6 +40,8 @@ NOTE: for Target-node 1 & 2 i use general user is "pratik" after craeted user ab
 
 # 💥On Ansible Master-Node 💥:---
 
+After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
+
 Go inside general user (psadmin) and create key for ssh Authentication:
  
       #ssh-keygen
