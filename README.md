@@ -82,6 +82,11 @@ NOTE: Do same Key-copy method to all target nodes .
         $sudo yum install ansible-core -y
         $ ansible --version
 
+   NOTE:
+     If Amazon linux 2 ami use then use follow command for download Ansible (/etc/ansible/ansible.cfg this config file provide)
+
+       # sudo amazon-linux-extras install ansible2
+
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
 we can create ansible config file manually.
