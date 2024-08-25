@@ -1,12 +1,12 @@
 # Ansible-setup-onAWS
 
-🌟Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication🌟
+Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication🌟
 
 About set-up:
 
 I have installed ansible on the top of AWS cloud EC2 ,Setup is i take Three EC2 amazon linux instance , one of these make master node(Ansible-master) and other remaining two make target node (Ansible-node-1,Ansible-node-2).
 
-❄️On three(master and target) instances Following set-up do as it is:
+### On three(master and target) instances Following set-up do as it is:
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
@@ -38,7 +38,7 @@ I have installed ansible on the top of AWS cloud EC2 ,Setup is i take Three EC2 
 NOTE: for Target-node 1 & 2 i use general user is "pratik" after craeted user above four steps do as it is in each target nodes.
 
 
-# 💥On Ansible Master-Node 💥:---
+### On Ansible Master-Node:---
 
 After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
 
@@ -76,7 +76,7 @@ NOTE: Do same Key-copy method to all target nodes .
 
 
 
-❄️On master node :(Now install Ansible on master node) ❄️
+#### On master node :(Now install Ansible on master node) ❄
 
 1. install ansible-core  , but in this ansible do not provide config file,
  generally ansible-config file loaction = /etc/ansible/ansible.cfg
@@ -113,7 +113,7 @@ After we created ansible config file it is empty , so we pull file and copy in i
       #ansible-config init --disabled > /etc/ansible/ansible.cfg
 
 
-⚡In ansible config file we do following changes:
+- In ansible config file we do following changes:
  
 open ansible.cfg
         
