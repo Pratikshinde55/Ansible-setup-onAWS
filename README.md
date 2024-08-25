@@ -76,7 +76,9 @@ NOTE: Do same Key-copy method to all target nodes .
 
 
 
-#### On master node :(Now install Ansible on master node) ❄
+#### On master node :(Now install Ansible on master node)
+
+###### Method 1 install ansible :
 
 1. install ansible-core  , but in this ansible do not provide config file,
  generally ansible-config file loaction = /etc/ansible/ansible.cfg
@@ -112,7 +114,23 @@ After we created ansible config file it is empty , so we pull file and copy in i
      
       #ansible-config init --disabled > /etc/ansible/ansible.cfg
 
+###### Method 2nd of installing Ansible with download extra package for yum:
+ 
+    # sudo yum update -y
+    
+    # sudo amazon-linux-extras install epel -y
 
+    # sudo yum install ansible -y
+
+    # ansible --version
+
+- Note: In this way we give pre-created ansible config file
+
+![image](https://github.com/user-attachments/assets/115c887d-9b18-4d02-9b33-17dbf6887303)
+
+
+##### ansible.cfg file settings: 
+    
 - In ansible config file we do following changes:
  
 open ansible.cfg
