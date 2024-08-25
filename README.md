@@ -11,26 +11,26 @@ I have installed ansible on the top of AWS cloud EC2 ,Setup is i take Three EC2 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
 
-1. create new user : i created "psadmin" general user for master node & set password :
+##### 1. create new user : i created "psadmin" general user for master node & set password :
 
           #useradd psadmin
           #passwd psadmin
    
-3. Give Sudo power to general user "psadmin" : 
+##### 2. Give Sudo power to general user "psadmin" : 
     
            #vi /etc/sudoers
 
 ![Screenshot 2024-03-01 153326](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/3678c115-aa28-406f-827c-3df34969b7e2)
 
 
-3.Allow Authentication in sshd config file :
+##### 3.Allow Authentication in sshd config file :
     
            #vi /etc/ssh/sshd_config
 
 ![11](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b26c3367-0e18-42aa-9031-4adb254a8142)
 
 
-4.restart sshd service 
+##### 4.restart sshd service 
 
     
           #systemctl restart sshd
