@@ -1,6 +1,6 @@
 # Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication
 
-About set-up:
+- About set-up:
 
 I have installed ansible on the top of AWS cloud EC2 ,Setup is like take Three EC2 amazon linux instance, One of these make Master node(Ansible-master) and other remaining Two make Target node
 (Ansible-node-1,Ansible-node-2).
@@ -10,7 +10,7 @@ I have installed ansible on the top of AWS cloud EC2 ,Setup is like take Three E
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
 
-##### 1. create new user : i created "psadmin" general user for master node & set password :
+ 1. create new user : i created "psadmin" general user for master node & set password :
 
           #useradd psadmin
           #passwd psadmin
