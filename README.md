@@ -38,7 +38,7 @@ Command for create new user:
 - NOTE: for Target-node 1 & 2 i use general user is "pratik" after created user above four steps do as it is in each target nodes.
 
 
-### On Ansible Master-Node:---
+## On Ansible Master-Node:---
 
 After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
 
@@ -149,15 +149,15 @@ Command for open ansible.cfg
         
      vi /etc/ansible/ansible.cfg
 
-**1. In this file we Add privilege escalation this give become method:**
+**1st In this file we Add privilege escalation this give become method:** 
 
 ![16](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/90c2ee3b-3e5b-409a-b233-e4093b7af8f0)
 
-**2. In this file we also uncomment ansible Inventory (remove semi colon):**
+**2nd In this file we also uncomment ansible Inventory (remove semi colon):**
 
 ![17](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/6c6377c9-f853-4cbe-91d8-986037f3cb05)
 
-**3. Making host_key_checking is False:**
+**3rd Making host_key_checking is False:** (This is because while connecting to target by ssh the target node password ask, So deactive Host_key_checking)
 
 ![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
           
