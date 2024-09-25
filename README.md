@@ -18,9 +18,9 @@ Command for create new user:
     
     passwd psadmin
    
-##### 2. Give Sudo power to general user "psadmin" : 
+#### Step-2: [Give Sudo power to general user "psadmin"]
     
-           #vi /etc/sudoers
+    vi /etc/sudoers
 
 ![Screenshot 2024-03-01 153326](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/3678c115-aa28-406f-827c-3df34969b7e2)
 
