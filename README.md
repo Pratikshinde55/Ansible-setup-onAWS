@@ -83,7 +83,7 @@ After key add we also check bye using folloowing command:
 
 ## On master node: (Install Ansible on master node)
 
-### Method 1st install Ansible :
+### Method 1st for installing Ansible :
 
 Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
@@ -124,7 +124,7 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 
        sudo amazon-linux-extras install ansible2
   
-### Method 2nd of installing Ansible with download extra package for yum:
+### Method 2nd for installing Ansible with download extra package for yum:
  
     sudo yum update -y
     
