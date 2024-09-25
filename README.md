@@ -119,6 +119,8 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 
     ansible-config init --disabled > /etc/ansible/ansible.cfg
 
+![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
+
 ###### Method 2nd of installing Ansible with download extra package for yum:
  
     # sudo yum update -y
