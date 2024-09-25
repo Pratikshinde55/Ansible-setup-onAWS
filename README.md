@@ -76,20 +76,22 @@ NOTE: Do same Key-copy method to all target nodes .
 
 
 
-#### On master node :(Now install Ansible on master node)
+## On master node: (Install Ansible on master node)
 
-###### Method 1 install ansible :
+### Method 1 install ansible :
 
-1. install ansible-core  , but in this ansible do not provide config file,
- generally ansible-config file loaction = /etc/ansible/ansible.cfg
+1. Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
-        $sudo yum install ansible-core -y
-        $ ansible --version
+   sudo yum install ansible-core -y
+   
+Command for check ansible version:
 
-   NOTE:
-     If Amazon linux 2 ami use then use follow command for download Ansible (/etc/ansible/ansible.cfg this config file provide)
+   ansible --version
 
-       # sudo amazon-linux-extras install ansible2
+- NOTE:
+If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)
+
+    sudo amazon-linux-extras install ansible2
 
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
