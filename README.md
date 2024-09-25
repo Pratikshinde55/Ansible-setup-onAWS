@@ -44,35 +44,40 @@ After do 1st four steps then create Key in general user in my case psadmin is ge
 
 Go inside general user (psadmin) and create key for ssh Authentication:
  
-      #ssh-keygen
-  Note: create ssh key at general user on which we want run ansible command.
+      ssh-keygen
+
+Note: **Create ssh key at general user on which we want run ansible command.**
   
 
 ![12](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c33efb1a-fdff-4d34-8475-e6d4de217dd9)
 
-ssh-key created in .ssh/ folder
+ssh-key created in **.ssh/** folder:
+    
+     cd .ssh/
+     
+Show hidden file:
 
-
-       $ cd .ssh/
-       $ ls -l
+     ls -l
 
 After Key created then need to copy my "psadmin" key to host nodes , use follw command to copy key to Target node:
+Format of ssh key copy to the target:
 
- #ssh-copy-id  pratik@<private ip of target ec2 instance>   <<--Format of cmd
-    
-     $ ssh-copy-id pratik@172.31.44.192
+    ssh-copy-id  pratik@<private_ip_of_target_ec2Instance>
+
+Command for Copy ssh key:
+
+    ssh-copy-id pratik@172.31.44.192
      
 
 ![13](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/4147ebd7-fdc5-4f0f-bee2-e57754dafafb)
      
-
-   After key add we also check bye using
+After key add we also check bye using folloowing command:
    
-     #ssh pratik@172.31.44.192
+    ssh pratik@172.31.44.192
 
-NOTE: Do same Key-copy method to all target nodes .
+- NOTE: Do same Key-copy method to all target nodes .
 
-........Here our instances is successfully connected by "ssh"........
+**........Here our instances is successfully connected by "ssh"........**
 
 
 
