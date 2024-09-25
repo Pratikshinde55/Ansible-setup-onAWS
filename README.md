@@ -120,7 +120,7 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
 - NOTE:
-**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)**
+**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).**
 
        sudo amazon-linux-extras install ansible2
   
@@ -136,18 +136,18 @@ Command for check ansible version and /etc/ansible/ansible.cfg location:
 
     ansible --version
 
-- Note: In this way we give pre-created ansible config file
+**In this way we give pre-created ansible config file**
 
 ![image](https://github.com/user-attachments/assets/115c887d-9b18-4d02-9b33-17dbf6887303)
 
 
-##### ansible.cfg file settings: 
+### ansible.cfg file Settings: 
     
-- In ansible config file we do following changes:
+In Ansible config file we do following changes:
  
-open ansible.cfg
+Command for open ansible.cfg
         
-           #vi /etc/ansible/ansible.cfg
+     vi /etc/ansible/ansible.cfg
 
   A. In this file we Add privilege escalation this give become method:
 
