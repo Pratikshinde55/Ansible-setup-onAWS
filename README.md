@@ -85,41 +85,39 @@ After key add we also check bye using folloowing command:
 
 ### Method 1 install ansible :
 
-1. Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
+1.Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
-      sudo yum install ansible-core -y
+       sudo yum install ansible-core -y
 
 Command for check ansible version:
 
-   ansible --version
-
-- NOTE:
-**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)**
-
-    sudo amazon-linux-extras install ansible2
-
+    ansible --version
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
-We can create ansible config file manually.
+- We can create ansible config file manually:
 
-NOTE: from General user we can't craete config file so we need to go root
+NOTE: Fom General user we can't create config file so we need to go root or use sudo.
 
-        #exit <<-- this helps to exit from General user
+    exit <<-- this helps to exit from General user
 
 On master Root user:
- Go inside /etc/ansible folder and create config file(ansible.cfg) use follw commands:
+Go inside **/etc/ansible** folder and create config file(ansible.cfg) use follw commands:
 
-      #cd /etc/ansible
+    cd /etc/ansible
+    
+Create ansible.cfg file:
 
-      # touch anible.cfg
+    touch ansible.cfg
 
-After we created ansible config file it is empty , so we pull file and copy in it for this use following command:
+After we created ansible config file it is empty, So we pull file and copy in it for this use following command:
 
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
-      # ansible-config init
-     
-      #ansible-config init --disabled > /etc/ansible/ansible.cfg
+    ansible-config init
+    
+Copy to destination **/etc/ansible/ansible.cfg**:
+
+    ansible-config init --disabled > /etc/ansible/ansible.cfg
 
 ###### Method 2nd of installing Ansible with download extra package for yum:
  
