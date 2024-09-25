@@ -5,15 +5,18 @@
 I have installed ansible on the top of AWS cloud EC2 ,Setup is like take Three EC2 amazon linux instance, One of these make Master node(Ansible-master) and other remaining Two make Target node
 (Ansible-node-1,Ansible-node-2).
 
-### On three(master and target) instances Following set-up do as it is:
+## On three(master and target) instances Following set-up do as it is:
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
+### Step-1: [Create new user i created "psadmin" general user for master node & set password]
+Command for create new user:
 
- 1. create new user : i created "psadmin" general user for master node & set password :
+    useradd psadmin
 
-          #useradd psadmin
-          #passwd psadmin
+ Command for Set password to user:
+    
+    passwd psadmin
    
 ##### 2. Give Sudo power to general user "psadmin" : 
     
