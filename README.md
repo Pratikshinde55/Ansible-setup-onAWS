@@ -83,7 +83,7 @@ After key add we also check bye using folloowing command:
 
 ## On master node: (Install Ansible on master node)
 
-### Method 1 install ansible :
+### Method 1st install Ansible :
 
 Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
@@ -111,8 +111,6 @@ Create ansible.cfg file:
 
 After we created ansible config file it is empty, So we pull file and copy in it for this use following command:
 
-![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
-
     ansible-config init
     
 Copy to destination **/etc/ansible/ansible.cfg**:
@@ -121,15 +119,22 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
-###### Method 2nd of installing Ansible with download extra package for yum:
+- NOTE:
+**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)**
+
+       sudo amazon-linux-extras install ansible2
+  
+### Method 2nd of installing Ansible with download extra package for yum:
  
-    # sudo yum update -y
+    sudo yum update -y
     
-    # sudo amazon-linux-extras install epel -y
+    sudo amazon-linux-extras install epel -y
 
-    # sudo yum install ansible -y
+    sudo yum install ansible -y
 
-    # ansible --version
+Command for check ansible version and /etc/ansible/ansible.cfg location:
+
+    ansible --version
 
 - Note: In this way we give pre-created ansible config file
 
