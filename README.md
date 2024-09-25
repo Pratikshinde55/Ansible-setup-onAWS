@@ -85,9 +85,9 @@ After key add we also check bye using folloowing command:
 
 ### Method 1 install ansible :
 
-1.Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
+Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
-       sudo yum install ansible-core -y
+    sudo yum install ansible-core -y
 
 Command for check ansible version:
 
