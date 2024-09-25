@@ -87,20 +87,20 @@ After key add we also check bye using folloowing command:
 
 1. Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
-   sudo yum install ansible-core -y
-   
+      sudo yum install ansible-core -y
+
 Command for check ansible version:
 
    ansible --version
 
 - NOTE:
-If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)
+**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide)**
 
     sudo amazon-linux-extras install ansible2
 
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
-we can create ansible config file manually.
+We can create ansible config file manually.
 
 NOTE: from General user we can't craete config file so we need to go root
 
