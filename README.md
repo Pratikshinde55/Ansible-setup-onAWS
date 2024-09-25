@@ -149,58 +149,46 @@ Command for open ansible.cfg
         
      vi /etc/ansible/ansible.cfg
 
-  A. In this file we Add privilege escalation this give become method:
+**1. In this file we Add privilege escalation this give become method:**
 
 ![16](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/90c2ee3b-3e5b-409a-b233-e4093b7af8f0)
 
-
- B. In this file we also uncomment ansible Inventory (remove semi colon):
+**2. In this file we also uncomment ansible Inventory (remove semi colon):**
 
 ![17](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/6c6377c9-f853-4cbe-91d8-986037f3cb05)
 
+**3. Making host_key_checking is False:**
 
- C. Making host_key_checking is False:
-
- ![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
+![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
           
 
+Now  ansible config file set-up:
 
+Create ansible inventory, Location is **/etc/ansible/host**:
 
-
-
-now  ansible config file set-up
-
-
-craete ansible inventory:
-
-    #vi /etc/ansible/host
+    vi /etc/ansible/host
 
 
 On "psadmin" general user (Master Node):
 
-Check all hosts are connected or not:
+Command for checking all hosts are connected or not:
 
-       $ ansible all -m ping
+    ansible all -m ping
 
 ![19](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/d7357644-e6d0-40c5-90fb-40e2dd826647)
 
-
 Create & Run Ansible-Playbook:
+    
+    vi web.yml
+Command for Run ansible-playbook:
 
-
-      $ vi web.yml
-      $ ansible-playbook web.yml
+    ansible-playbook web.yml
 
 ![20](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/0df1a5b2-9049-4242-986d-e22dc662297f)
 
+Check on target node httpd install or not:
 
-      
-
-
-check on target node httpd install or not:--
-
-
-    # rpm -q httpd
+    rpm -q httpd
     
 ![21](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/35e67fef-7fd1-480f-90b9-a1079f81c696)
 
