@@ -160,9 +160,17 @@ Command for open ansible.cfg
 **3rd Making host_key_checking is False:** (This is because while connecting to target by ssh the target node password ask, So deactive Host_key_checking)
 
 ![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
-          
 
-Now  ansible config file set-up:
+
+become=True: Enables privilege escalation (e.g., running tasks as root).
+
+become_method=sudo: Specifies that the sudo command is used for privilege escalation.
+
+become_user=root: Defines that the tasks will be executed as the root user (or any other user you specify).
+
+become_ask_pass=False: Prevents Ansible from prompting for the password when escalating privileges (assuming passwordless sudo or other configuration).
+
+- Now  ansible config file set-up:
 
 Create ansible inventory, Location is **/etc/ansible/host**:
 
