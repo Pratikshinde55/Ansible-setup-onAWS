@@ -10,16 +10,17 @@ Target-node.
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
-### Step-1: [Create new user i created "psadmin" general user for master node & set password]
+### Step-1: [Create New/General User I create "psadmin" general user for Master-node & set password]
 Command for create new user:
 
     useradd psadmin
 
- Command for Set password to user:
+Command for Set password to user:
     
     passwd psadmin
    
 ### Step-2: [Give Sudo power to general user "psadmin"]
+The general user don't have so much power like root, So I give the root level power/permission to the general user. The file location is **/etc/sudoers**.
     
     vi /etc/sudoers
 
