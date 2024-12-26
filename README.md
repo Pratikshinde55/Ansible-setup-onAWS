@@ -6,7 +6,7 @@ I have installed ansible on the top of AWS Cloud EC2 Insatnce, Setup is like I t
 Target-node.
 (Ansible-node-1,Ansible-node-2).
 
-## On three(master and target) instances Following set-up do as it is:
+## On three(master & target) Instances Following set-up do as it is:
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
