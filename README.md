@@ -28,27 +28,28 @@ The general user don't have so much power like root, So I give the root level po
 
 
 ### Step-3: [Allow Authentication in sshd config file]
+To access the EC2 by SSH then we need to change some settings in SSH Config file, The Location of SSH Config file is **/etc/ssh/sshd_config**.
     
     vi /etc/ssh/sshd_config
 
 ![11](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b26c3367-0e18-42aa-9031-4adb254a8142)
 
 ### Step-4: [Restart sshd service] 
+After change in the ssh config file then we need to restart that file to apply the new changes.
 
     systemctl restart sshd
 
 - NOTE: for Target-node 1 & 2 i use general user is "pratik" after created user above four steps do as it is in each target nodes.
 
 
-## On Ansible Master-Node:---
-
+## On Ansible Master-Node:-
 After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
 
 Go inside general user (psadmin) and create key for ssh Authentication:
  
       ssh-keygen
 
-Note: **Create ssh key at general user on which we want run ansible command.**
+- Note: **Create ssh key at general user on which we want run ansible command.**
   
 
 ![12](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c33efb1a-fdff-4d34-8475-e6d4de217dd9)
@@ -64,7 +65,7 @@ Show hidden file:
 After Key created then need to copy my "psadmin" key to host nodes , use follw command to copy key to Target node:
 Format of ssh key copy to the target:
 
-    ssh-copy-id  pratik@<private_ip_of_target_ec2Instance>
+    ssh-copy-id  <User_name>@<public_ip_of_target_ec2Instance>
 
 Command for Copy ssh key:
 
@@ -73,7 +74,9 @@ Command for Copy ssh key:
 
 ![13](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/4147ebd7-fdc5-4f0f-bee2-e57754dafafb)
      
-After key add we also check bye using folloowing command:
+- After key add we also check bye using following Command:
+
+To add EC2 1st time with SSH we need to do manual, While adding they ask password.
    
     ssh pratik@172.31.44.192
 
@@ -82,11 +85,16 @@ After key add we also check bye using folloowing command:
 **........Here our instances is successfully connected by "ssh"........**
 
 
+## On master node: [Install Ansible on master node]
 
-## On master node: (Install Ansible on master node)
+### Method 1st for installing Ansible: (AMI- Amazon-linux-2)
+NOTE:
 
-### Method 1st for installing Ansible :
+**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).**
 
+       sudo amazon-linux-extras install ansible2
+
+### Method 2nd for Install Ansible: (AMI- Amazon-linux)
 Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
     sudo yum install ansible-core -y
@@ -121,12 +129,8 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
-- NOTE:
-**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).**
-
-       sudo amazon-linux-extras install ansible2
   
-### Method 2nd for installing Ansible with download extra package for yum:
+### Method 3rd for installing Ansible with download extra package for yum:(AMI- Amazon-linux-2/Amazon-linux)
  
     sudo yum update -y
     
@@ -143,7 +147,8 @@ Command for check ansible version and /etc/ansible/ansible.cfg location:
 ![image](https://github.com/user-attachments/assets/115c887d-9b18-4d02-9b33-17dbf6887303)
 
 
-### ansible.cfg file Settings: 
+
+## Ansible Config file settings: [ansible.cfg] 
     
 In Ansible config file we do following changes:
  
