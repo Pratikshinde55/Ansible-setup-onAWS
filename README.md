@@ -1,4 +1,5 @@
 # Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication
+![Ansible-Master and target node configuration on AWS cloud using ssh-key Authentication (1)](https://github.com/user-attachments/assets/4d193546-e2a7-4b5f-afc4-6937c62f0bb6)
 
 - About set-up:
 
