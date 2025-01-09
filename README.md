@@ -46,7 +46,7 @@ After change in the ssh config file then we need to restart that file to apply t
 ## On Ansible Master-Node:-
 After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
 
-   su - psadmin
+      su - psadmin
 
 Go inside general user (psadmin) and create key for ssh Authentication:
  
