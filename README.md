@@ -122,7 +122,23 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
           ansible --version
 
-3. **[Optional- If path is not set of ansible & ansible cmd not work then use]**
+3. **Step-3 [Create the Configuration File Directory(/etc/ansible/ansible.cfg)]**
+   
+   - Create the /etc/ansible/ directory: (The -p flag ensures that the directory is created only if it doesn't exist. If it already exists, no error will be thrown.)
+
+          sudo mkdir -p /etc/ansible
+     
+   - Create the ansible.cfg file:
+
+          sudo vim /etc/ansible/ansible.cfg
+   
+   - If you want to create the ansible.cfg file with the default configuration, you can use the ansible-config command:
+
+          sudo ansible-config init --disabled > /etc/ansible/ansible.cfg
+
+   - This will generate a default ansible.cfg file with all options commented out (disabled).
+   
+4. **[Optional- If path is not set of ansible & ansible cmd not work then use]**
 
     - Check the Installation Path:
   
@@ -133,7 +149,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
            echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bash_profile
            source ~/.bash_profile
 
-4. **[Optinal- To remove older version of ansible if new version not configure]**
+5. **[Optinal- To remove older version of ansible if new version not configure]**
 
    - Remove Ansible:
 
