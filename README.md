@@ -90,6 +90,22 @@ To add EC2 1st time with SSH we need to do manual, While adding they ask passwor
 
 ## On master node: [Install Ansible on master node]
 
+### For Amazon-linux2 AMI with python3.8 latest version of "Ansible-core" [Latest version of Ansible-core in 2025]
+We Install ansible-core latest version with the help of python3.8 because latest version Ansible-core support from python3.8 version.
+
+1. **Step-1 [Install Python 3.8 Using Amazon Linux Extras]**
+   Amazon Linux 2 provides an easy way to install newer versions of Python through the Amazon Linux Extras repository.
+
+   Enable the Python 3.8 repository:
+
+      sudo amazon-linux-extras enable python3.8
+
+   Install Python 3.8:
+   
+      sudo yum install python3.8
+
+3. **Step-2 []
+
 ### Method 1st for installing Ansible: (AMI- Amazon-linux-2)
 NOTE:
 
