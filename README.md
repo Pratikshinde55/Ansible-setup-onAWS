@@ -181,21 +181,18 @@ NOTE: Fom General user we can't create config file so we need to go root or use 
 
 ### Method 4th:--  [Installing Ansible with download extra package for yum:(AMI- Amazon-linux-2/Amazon-linux)]
  
-    sudo yum update -y
+      sudo yum update -y
     
-    sudo amazon-linux-extras install epel -y
+      sudo amazon-linux-extras install epel -y
 
-    sudo yum install ansible -y
+      sudo yum install ansible -y
 
-Command for check ansible version and /etc/ansible/ansible.cfg location:
+- Command for check ansible version and /etc/ansible/ansible.cfg location:
 
-    ansible --version
+      ansible --version
 
-**In this way we give pre-created ansible config file**
-
+- **In this way we give pre-created ansible config file**
 ![image](https://github.com/user-attachments/assets/115c887d-9b18-4d02-9b33-17dbf6887303)
-
-
 
 ## Ansible Config file settings: [ansible.cfg] 
 - This Step is very important to run in every ansible version 
@@ -217,42 +214,39 @@ Command for open ansible.cfg
 
 ![18](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/b6af24e1-3d8a-4e2b-8bef-b1b080c8df14)
 
+- become=True: Enables privilege escalation (e.g., running tasks as root).
 
-become=True: Enables privilege escalation (e.g., running tasks as root).
+- become_method=sudo: Specifies that the sudo command is used for privilege escalation.
 
-become_method=sudo: Specifies that the sudo command is used for privilege escalation.
+- become_user=root: Defines that the tasks will be executed as the root user (or any other user you specify).
 
-become_user=root: Defines that the tasks will be executed as the root user (or any other user you specify).
-
-become_ask_pass=False: Prevents Ansible from prompting for the password when escalating privileges (assuming passwordless sudo or other configuration).
+- become_ask_pass=False: Prevents Ansible from prompting for the password when escalating privileges (assuming passwordless sudo or other configuration).
 
 - Now  ansible config file set-up:
 
-Create ansible inventory, Location is **/etc/ansible/host**:
+- Create ansible inventory, Location is **/etc/ansible/host**:
 
-    vi /etc/ansible/host
+      vi /etc/ansible/host
 
+- On "psadmin" general user (Master Node):
 
-On "psadmin" general user (Master Node):
+- Command for checking all hosts are connected or not:
 
-Command for checking all hosts are connected or not:
-
-    ansible all -m ping
+      ansible all -m ping
 
 ![19](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/d7357644-e6d0-40c5-90fb-40e2dd826647)
 
-Create & Run Ansible-Playbook:
+- Create & Run Ansible-Playbook:
     
-    vi web.yml
-Command for Run ansible-playbook:
+       vi web.yml
+- Command for Run ansible-playbook:
 
-    ansible-playbook web.yml
+       ansible-playbook web.yml
 
 ![20](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/0df1a5b2-9049-4242-986d-e22dc662297f)
 
-Check on target node httpd install or not:
+- Check on target node httpd install or not:
 
-    rpm -q httpd
+       rpm -q httpd
     
 ![21](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/35e67fef-7fd1-480f-90b9-a1079f81c696)
-
