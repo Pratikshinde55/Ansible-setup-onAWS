@@ -92,7 +92,7 @@ Here i give Steo by step how to download ansible different versions latest/older
 
 ### For Amazon-linux2:-  [AMI with python3.8 latest version of "Ansible-core" (Latest version of Ansible-core in 2025)]
 We Install ansible-core latest version with the help of python3.8 because latest version Ansible-core support from python3.8 version.
-![image](https://github.com/user-attachments/assets/25cae3a1-5c79-4d65-8296-7a0152415f5e)
+![Ansible-version](https://github.com/user-attachments/assets/a88cdc90-bc89-4fbc-b9ab-0222d6190ddc)
 
 1. **Step-1 [Install Python 3.8 Using Amazon Linux Extras]**
    
