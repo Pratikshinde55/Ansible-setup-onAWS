@@ -98,11 +98,11 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
    Enable the Python 3.8 repository:
 
-      sudo amazon-linux-extras enable python3.8
+        sudo amazon-linux-extras enable python3.8
 
    Install Python 3.8:
    
-      sudo yum install python3.8
+        sudo yum install python3.8
 
 3. **Step-2 []
 
