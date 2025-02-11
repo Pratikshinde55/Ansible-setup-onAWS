@@ -121,7 +121,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
           ansible --version
 
-3. **Step-3 [Optional- If path is not set of ansible & ansible cmd not work then use]**
+3. **[Optional- If path is not set of ansible & ansible cmd not work then use]**
 
     - Check the Installation Path:
   
@@ -132,7 +132,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
            echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bash_profile
            source ~/.bash_profile
 
-4. **Step-4 [Optinal- To remove older version of ansible if new version not configure]**
+4. **[Optinal- To remove older version of ansible if new version not configure]**
 
    - Remove Ansible:
 
