@@ -87,10 +87,12 @@ To add EC2 1st time with SSH we need to do manual, While adding they ask passwor
 **........Here our instances is successfully connected by "ssh"........**
 
 
-## On master node: [Install Ansible on master node]
+## On master node: [Install Ansible on master node for different version]
+Here i give Steo by step how to download ansible different versions latest/older on AWS Cloud:
 
 ### For Amazon-linux2:-  [AMI with python3.8 latest version of "Ansible-core" (Latest version of Ansible-core in 2025)]
 We Install ansible-core latest version with the help of python3.8 because latest version Ansible-core support from python3.8 version.
+![image](https://github.com/user-attachments/assets/25cae3a1-5c79-4d65-8296-7a0152415f5e)
 
 1. **Step-1 [Install Python 3.8 Using Amazon Linux Extras]**
    
@@ -138,18 +140,18 @@ We Install ansible-core latest version with the help of python3.8 because latest
            sudo yum remove ansible
      
 ### For Amazon-linux2:- Download older ansible using python2(Older Ansible-version)
-**If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).**
+- If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).
 
-       sudo amazon-linux-extras install ansible2
+        sudo amazon-linux-extras install ansible2
 
 ### Method 3:-  for Install Ansible: (AMI- Amazon-linux) 
-Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
+- Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
-    sudo yum install ansible-core -y
+       sudo yum install ansible-core -y
 
-Command for check ansible version:
+- Command for check ansible version:
 
-    ansible --version
+       ansible --version
 ![14](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/1f99f21c-cf32-48b3-a85b-7547308fd0c9)
 
 - We can create ansible config file manually:
@@ -158,26 +160,25 @@ NOTE: Fom General user we can't create config file so we need to go root or use 
 
     exit <<-- this helps to exit from General user
 
-On master Root user:
-Go inside **/etc/ansible** folder and create config file(ansible.cfg) use follw commands:
+- On master Root user:
+- Go inside **/etc/ansible** folder and create config file(ansible.cfg) use follw commands:
 
-    cd /etc/ansible
+       cd /etc/ansible
     
-Create ansible.cfg file:
+- Create ansible.cfg file:
 
-    touch ansible.cfg
+       touch ansible.cfg
 
-After we created ansible config file it is empty, So we pull file and copy in it for this use following command:
+- After we created ansible config file it is empty, So we pull file and copy in it for this use following command:
 
-    ansible-config init
+      ansible-config init
     
-Copy to destination **/etc/ansible/ansible.cfg**:
+- Copy to destination **/etc/ansible/ansible.cfg**:
 
-    ansible-config init --disabled > /etc/ansible/ansible.cfg
+      ansible-config init --disabled > /etc/ansible/ansible.cfg
 
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
-  
 ### Method 4th:--  [Installing Ansible with download extra package for yum:(AMI- Amazon-linux-2/Amazon-linux)]
  
     sudo yum update -y
