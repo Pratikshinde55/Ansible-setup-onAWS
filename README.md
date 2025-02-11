@@ -7,7 +7,7 @@ I have installed ansible on the top of AWS Cloud EC2 Insatnce, Setup is like I t
 Target-node.
 (Ansible-node-1,Ansible-node-2).
 
-## On three(master & target) Instances Following set-up do as it is:
+## On Three(Master & Target) Instances Following set-up do as it is:
 
 ![Screenshot 2024-03-01 153246](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/a96622a1-f8a6-46f4-a850-23ceb89e8ecb)
 
@@ -41,7 +41,6 @@ After change in the ssh config file then we need to restart that file to apply t
     systemctl restart sshd
 
 - NOTE: for Target-node 1 & 2 i use general user is "pratik" after created user above four steps do as it is in each target nodes.
-
 
 ## On Ansible Master-Node:-
 After do 1st four steps then create Key in general user in my case psadmin is general user of my Ansible master node
@@ -90,7 +89,7 @@ To add EC2 1st time with SSH we need to do manual, While adding they ask passwor
 
 ## On master node: [Install Ansible on master node]
 
-### For Amazon-linux2 AMI with python3.8 latest version of "Ansible-core" [Latest version of Ansible-core in 2025]
+### For Amazon-linux2:-  [AMI with python3.8 latest version of "Ansible-core" (Latest version of Ansible-core in 2025)]
 We Install ansible-core latest version with the help of python3.8 because latest version Ansible-core support from python3.8 version.
 
 1. **Step-1 [Install Python 3.8 Using Amazon Linux Extras]**
@@ -138,14 +137,12 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
            sudo yum remove ansible
      
-### Method 1st for installing Ansible: (AMI- Amazon-linux-2)
-NOTE:
-
+### For Amazon-linux2:- Download older ansible using python2(Older Ansible-version)
 **If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).**
 
        sudo amazon-linux-extras install ansible2
 
-### Method 2nd for Install Ansible: (AMI- Amazon-linux)
+### Method 3:-  for Install Ansible: (AMI- Amazon-linux) 
 Install ansible-core, but in this ansible do not provide config file, generally ansible-config file loaction = **/etc/ansible/ansible.cfg**
 
     sudo yum install ansible-core -y
@@ -181,7 +178,7 @@ Copy to destination **/etc/ansible/ansible.cfg**:
 ![15](https://github.com/Pratikshinde55/Ansible-setup-onAWS/assets/145910708/c9f71123-d97f-47a8-bab4-da549e18b596)
 
   
-### Method 3rd for installing Ansible with download extra package for yum:(AMI- Amazon-linux-2/Amazon-linux)
+### Method 4th:--  [Installing Ansible with download extra package for yum:(AMI- Amazon-linux-2/Amazon-linux)]
  
     sudo yum update -y
     
@@ -200,8 +197,8 @@ Command for check ansible version and /etc/ansible/ansible.cfg location:
 
 
 ## Ansible Config file settings: [ansible.cfg] 
-    
-In Ansible config file we do following changes:
+- This Step is very important to run in every ansible version 
+- Ansible config file location-> /etc/ansible/ansible.cfg
  
 Command for open ansible.cfg
         
