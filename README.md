@@ -94,15 +94,16 @@ To add EC2 1st time with SSH we need to do manual, While adding they ask passwor
 We Install ansible-core latest version with the help of python3.8 because latest version Ansible-core support from python3.8 version.
 
 1. **Step-1 [Install Python 3.8 Using Amazon Linux Extras]**
-   Amazon Linux 2 provides an easy way to install newer versions of Python through the Amazon Linux Extras repository.
-
-   Enable the Python 3.8 repository:
-
-        sudo amazon-linux-extras enable python3.8
-
-   Install Python 3.8:
    
-        sudo yum install python3.8
+   - Amazon Linux 2 provides an easy way to install newer versions of Python through the Amazon Linux Extras repository.
+
+     Enable the Python 3.8 repository:
+
+          sudo amazon-linux-extras enable python3.8
+
+     Install Python 3.8:
+   
+          sudo yum install python3.8
 
 3. **Step-2 []
 
