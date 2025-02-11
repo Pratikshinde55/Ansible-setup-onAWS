@@ -97,16 +97,47 @@ We Install ansible-core latest version with the help of python3.8 because latest
    
    - Amazon Linux 2 provides an easy way to install newer versions of Python through the Amazon Linux Extras repository.
 
-     Enable the Python 3.8 repository:
+   - Enable the Python 3.8 repository:
 
           sudo amazon-linux-extras enable python3.8
 
-     Install Python 3.8:
+   - Install Python 3.8:
    
           sudo yum install python3.8
 
-3. **Step-2 []
+   - Check Install:
 
+          python3.8 --version
+
+2. **Step-2 [Install/Upgrade Ansible-Core Using pip for Python 3.8]**
+   
+   - Now that pip3 for Python 3.8 is installed, we can use it to install or upgrade Ansible-Core.
+
+   - Run the following command to install Ansible using Python 3.8's pip:
+
+          sudo python3.8 -m pip install --upgrade ansible-core
+
+   - Check Ansible Version:
+
+          ansible --version
+
+3. **Step-3 [Optional- If path is not set of ansible & ansible cmd not work then use]**
+
+    - Check the Installation Path:
+  
+           which ansible
+
+    - path to the executable have been set correctly: (~/.bash_profile is the file where user-specific shell configurations are stored (for bash shell users).)
+  
+           echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bash_profile
+           source ~/.bash_profile
+
+4. **Step-4 [Optinal- To remove older version of ansible if new version not configure]**
+
+   - Remove Ansible:
+
+           sudo yum remove ansible
+     
 ### Method 1st for installing Ansible: (AMI- Amazon-linux-2)
 NOTE:
 
