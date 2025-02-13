@@ -124,7 +124,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
 3. **Step-3 [Create the Configuration File Directory(/etc/ansible/ansible.cfg)]**
    
-   - Create the `/etc/ansible/ directory`: (The -p flag ensures that the directory is created only if it doesn't exist. If it already exists, no error will be thrown.)
+   - Create the `/etc/ansible/` directory: (The -p flag ensures that the directory is created only if it doesn't exist. If it already exists, no error will be thrown.)
 
           sudo mkdir -p /etc/ansible
      
@@ -144,7 +144,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
   
           which ansible
 
-    - path to the executable have been set correctly: (~/.bash_profile is the file where user-specific shell configurations are stored (for bash shell users).)
+    - path to the executable have been set correctly: (`~/.bash_profile` is the file where user-specific shell configurations are stored (for bash shell users).)
   
            echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bash_profile
            source ~/.bash_profile
@@ -157,7 +157,7 @@ We Install ansible-core latest version with the help of python3.8 because latest
 
 6. **sshpass install: [If we don't want share manual public key by using aah-copy-id cmd then use this method]**
 
-   - Install the `epel-release package`:(This is for amazon linux2 AMI to enable to download sshpass)
+   - Install the `epel-release` package:(This is for amazon linux2 AMI to enable to download sshpass)
 
    - Enable amazon-linux-extras epel :
      
