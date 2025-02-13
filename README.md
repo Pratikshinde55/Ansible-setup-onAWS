@@ -154,7 +154,23 @@ We Install ansible-core latest version with the help of python3.8 because latest
    - Remove Ansible:
 
            sudo yum remove ansible
+
+6. **sshpass install: [If we don't want share manual public key by using aah-copy-id cmd then use this method]**
+
+   - Install the epel-release package:(This is for amazon linux2 AMI to enable to download sshpass)
+
+         - Enable amazon-linux-extras epel :
      
+                  sudo amazon-linux-extras enable epel
+     
+         - install epel-release:
+
+                  sudo yum install epel-release
+
+   - After enabling the EPEL repository, install sshpass:
+  
+          sudo yum install sshpass
+
 ### For Amazon-linux2:- Download older ansible using python2(Older Ansible-version)
 - If Amazon linux 2 ami use then use following command for download Ansible (/etc/ansible/ansible.cfg this config file provide).
 
